@@ -5,6 +5,9 @@
 - 22127031 - Nguyễn Duy Bảo
 - 22127203 - Võ Ngọc Khoa
 
+## Project Planning
+https://docs.google.com/spreadsheets/d/1wOe1QLV6qv9JPPtfo_QqdeWPaUOkSPMe1-wwxWyNneA
+
 ## Project Title
 **Analyzing Mobile Device Usage and User Behavior**
 
@@ -44,48 +47,26 @@ The dataset was sourced from [Kaggle](https://www.kaggle.com/). It was imported 
 
 ### 3. **Asking Meaningful Questions**
 We formulated the following research questions based on the dataset:
-1. What is the relationship between screen-on time and app usage time across different user behavior classes?
-2. How does battery drain vary with the number of apps installed?
-3. Can we predict a user's behavior class based on key features like app usage time, screen-on time, and data usage?
-4. Are there notable differences in usage patterns between iOS and Android users?
-5. Does gender or age significantly influence user behavior categories?
+1. What factors influence battery drain the most?
+2. How does app usage time vary across different age groups and genders?
+3. Is there a significant correlation between the number of apps installed and the daily data usage and battery drain across different operating systems?
+4. How does Age influence Battery Drain (mAh/day) and App Usage Time (min/day) across different Operating Systems? Is there a significant difference in these relationships for Android vs. iOS users?
+5. How does the number of Apps Installed affect the Data Usage (MB/day)? Is there a non-linear relationship, and how does it differ across Operating Systems?
+6. Which age group uses the most mobile data and what does it reflect?
 
-### 4. **Analysis and Model Building**
-- Applied statistical analysis to answer questions and validate hypotheses.
-- Implemented machine learning models (e.g., Decision Trees, Random Forests, and Logistic Regression) to predict user behavior classes.
-- Evaluated model performance using metrics like accuracy, precision, recall, and F1-score.
-
-### 5. **Reflection**
-- Summarized key findings and insights.
-- Discussed the strengths and limitations of the dataset and analysis methods.
-- Highlighted potential applications of this work in designing user-centric mobile applications.
-
-### 6. **References**
-- Kaggle Dataset: [Mobile Device Usage and User Behavior Dataset](https://www.kaggle.com/)
+### 5. **References**
 - Course Materials: CSC17104 – Programming for Data Science Lecture Notes
+- Linear Regression: https://www.geeksforgeeks.org/ml-linear-regression/
+- Correlation: https://www.geeksforgeeks.org/what-is-correlation-analysis/
+- Slope and Intercept: https://www.w3schools.com/datascience/ds_linear_slope.asp
+- Seaborn plots: https://www.geeksforgeeks.org/types-of-seaborn-plots/
 
-## Repository Structure
-|-- data/
-|-- mobile_device_usage.csv # Dataset file
-|-- notebooks/
-|-- data_exploration.ipynb # Jupyter Notebook for data exploration and preprocessing
-|-- analysis.ipynb # Notebook for answering questions and model building
-|-- results/
-|-- visualizations/ # Charts and graphs generated during analysis
-|-- models/ # Saved machine learning models
-|-- README.md # Project description and details
 
 ## Requirements
 The project was implemented in Python using the following libraries:
 - **Pandas**: Data manipulation and preprocessing
 - **NumPy**: Numerical computations
 - **Matplotlib/Seaborn**: Data visualization
-- **Scikit-learn**: Machine learning model development
-
-## Usage
-- Clone the repository to your local machine:
-   ```bash
-   git clone https://github.com/your_username/mobile-usage-analysis.git
 
 ## Acknowledgments
 - Kaggle for providing the Mobile Device Usage and User Behavior Dataset.
